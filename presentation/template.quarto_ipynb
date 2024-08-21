@@ -95,7 +95,7 @@
         "\n",
         "## Naturaleza de los datos\n"
       ],
-      "id": "81726667"
+      "id": "264a01a7"
     },
     {
       "cell_type": "code",
@@ -107,12 +107,12 @@
         "import os\n",
         "\n",
         "# Cargar los datos\n",
-        "data = pd.read_csv('bbdd/redcard_data.csv')\n",
+        "data = pd.read_csv('/Users/matdknu/Dropbox/MACI-UDEC/fundamento-ccdd/ffcc-udec/final-work/bbdd/redcard_data.csv')\n",
         "data.head\n",
         "\n",
         "data['age'] = 2024 - pd.to_datetime(data['birthday']).dt.year"
       ],
-      "id": "1138e774",
+      "id": "593f1745",
       "execution_count": null,
       "outputs": []
     },
@@ -123,7 +123,7 @@
         "## Transformación de variables\n",
         "#### **Equipo de elite**"
       ],
-      "id": "1966f4bf"
+      "id": "a61bb088"
     },
     {
       "cell_type": "code",
@@ -140,7 +140,7 @@
         "data['elite'] = data['elite'].map({1: 'Elite', 0: 'No-Elite'})\n",
         "data['elite'] = data['elite'].astype(str)"
       ],
-      "id": "817362a2",
+      "id": "39dbcdcf",
       "execution_count": null,
       "outputs": []
     },
@@ -150,7 +150,7 @@
       "source": [
         "#### **Rater de sesgo racial y NA**"
       ],
-      "id": "5bad4559"
+      "id": "ee962c01"
     },
     {
       "cell_type": "code",
@@ -168,7 +168,7 @@
         "# Mostrar las primeras filas de 'rater_mean' y 'elite'\n",
         "print(data[['rater_mean', 'elite']].head(2))"
       ],
-      "id": "9ea1ee92",
+      "id": "dd5c4fe4",
       "execution_count": null,
       "outputs": []
     },
@@ -178,7 +178,7 @@
       "source": [
         "## Exploración de datos\n"
       ],
-      "id": "fe63a0e5"
+      "id": "deb947d7"
     },
     {
       "cell_type": "code",
@@ -189,7 +189,7 @@
         "# Mostrar los resultados\n",
         "print(elite_frequencies)"
       ],
-      "id": "f7856eae",
+      "id": "b282e291",
       "execution_count": null,
       "outputs": []
     },
@@ -200,7 +200,7 @@
         "## Datos\n",
         "### Datos descriptivos contraste élite - no elite \n"
       ],
-      "id": "2f030bb6"
+      "id": "79e524f3"
     },
     {
       "cell_type": "code",
@@ -215,7 +215,7 @@
         "# Mostrar los resultados\n",
         "print(stats_by_rater_age)"
       ],
-      "id": "6b4525d5",
+      "id": "24bf2367",
       "execution_count": null,
       "outputs": []
     },
@@ -297,7 +297,7 @@
         "   \n",
         "</div>"
       ],
-      "id": "65fe23bb"
+      "id": "ce5980e2"
     }
   ],
   "metadata": {
@@ -305,7 +305,7 @@
       "name": "python3",
       "language": "python",
       "display_name": "Python 3 (ipykernel)",
-      "path": "/Users/matdknu/Library/Python/3.12/share/jupyter/kernels/python3"
+      "path": "/Users/matdknu/Dropbox/MACI-UDEC/fundamento-ccdd/ffcc-udec/.venv/share/jupyter/kernels/python3"
     }
   },
   "nbformat": 4,

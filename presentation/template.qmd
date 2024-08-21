@@ -95,7 +95,7 @@ import numpy as np
 import os
 
 # Cargar los datos
-data = pd.read_csv('bbdd/redcard_data.csv')
+data = pd.read_csv('/Users/matdknu/Dropbox/MACI-UDEC/fundamento-ccdd/ffcc-udec/final-work/bbdd/redcard_data.csv')
 data.head
 
 data['age'] = 2024 - pd.to_datetime(data['birthday']).dt.year
